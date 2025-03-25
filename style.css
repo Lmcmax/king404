@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+/*    font-family: sans-serif;*/
+}
+
+:root{
+    --liniar_color : linear-gradient(80deg, rgb(0, 0, 0) ,rgb(80, 80, 87));
+}
+
+body {
+    background: var(--liniar_color)
+}
+
+.heading{
+    color: #ffffff;
+    cursor:copy;
+}
+
+.head{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    animation:  lmchead 4s;
+
+}
+
+@keyframes lmchead {
+    from{
+        width: 2%;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+.teeth{
+    font-size: 25px;
+    color: #ff0000;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.head ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+
+
+
+.head ul li a{
+    text-decoration: none;
+    color: #ffffff;
+
+    /*Tis is for boro hate dekharjonno text-transform: uppercase;*/
+    text-transform: uppercase;
+    padding: 3px;
+
+    transition: 0.1112s ease-in-out;
+
+}
+
+
+
+.head ul li a:hover {
+    border-radius: 15px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: #7a6b6b;
+}
+
+
+
+
+.main{
+
+    padding-top: 10%;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+.title{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding-bottom: 2%;
+
+    animation: lmcmax 2s;
+}
+
+@keyframes lmcmax {
+    from{
+        padding-left: 10%;
+    }
+    to{
+        padding: 0;
+    }
+    
+}
+
+.para{
+    color: #ffffff;
+    margin: auto;
+    font-size: 15px;
+}
+
+
+
+.button{
+    margin: 1%;
+}
+    /*This is my animation*/
+.btna {
+    margin: 0 20px  0;
+    font-size: 15px;
+    font-family:cursive;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+
+    transition: 0.99s ease-in-out;
+
+}
+
+.btna:hover{
+    color: #ffffff;
+    background-color: black;
+}
+
+.btnb {
+    margin: 0 20px  0;
+    font-size: 15px;
+    font-family:cursive;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+
+    transition: 0.99s ease-in-out;
+}
+
+.btnb:hover{
+    color: #ffffff;
+    background-color: black;
+}
+.end kbd i{
+    font-size: 20px;
+}
+.end{
+    color: rgb(160, 151, 151);
+    font-size: 15px;
+    /*best idea ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    ___________+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    top: 90%;
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+ /*   transform: translate(-50%, -10%);*/
+}
+
+.problem{
+    display: none;
+}
+
+
+@media all and (max-width: 905px ) {
+    .title{
+        font-size: 40px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .end{
+        margin-left: 10%;
+    }
+    .head ul li{
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .head{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .end{
+        display: none;
+    }
+    .problem{
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+    }
+
+}
